@@ -18,9 +18,6 @@
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base.mk)
 
-# Inherit from n1awifi device
-$(call inherit-product, device/samsung/n1awifi/device.mk)
-
 # Inherit some common lineage stuff
 $(call inherit-product, vendor/lineage/config/common_full_tablet_wifionly.mk)
 
@@ -38,3 +35,6 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     PRIVATE_BUILD_DESC="lt03wifixx-user 5.1.1 LMY47X P600XXSDRI1 release-keys"
 
 BUILD_FINGERPRINT := samsung/lt03wifixx/lt03wifi:5.1.1/LMY47X/P600XXSDRI1:user/release-keys
+
+# Inherit from n1awifi device
+$(call inherit-product, device/samsung/n1awifi/device.mk)
