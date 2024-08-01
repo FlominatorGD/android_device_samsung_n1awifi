@@ -23,7 +23,7 @@ LOCAL_PATH := device/samsung/n1awifi
 TARGET_OTA_ASSERT_DEVICE := n1a3g,lt03wifi,lt03wifiue,n1awifi,lt033g
 
 # Kernel
-TARGET_KERNEL_CONFIG := lineageos_n1awifi_defconfig
+TARGET_KERNEL_CONFIG := lineageos_n1awifi_defconfig_user
 
 # Partitions
 BOARD_BOOTIMAGE_PARTITION_SIZE := 8388608
